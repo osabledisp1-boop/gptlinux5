@@ -1,0 +1,15 @@
+Source: gptlinux5
+Section: utils
+Priority: optional
+Maintainer: GPT Linux 5 <you@example.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.5.0
+Homepage: https://example.invalid/gptlinux5
+
+Package: gptlinux5
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, python3-requests, python3-flask
+Description: GPT-backed command/script analyzer for Kali
+ GPT Linux 5 sends commands or scripts to a configured LLM endpoint and returns analysis,
+ safety notes, and simulated outputs. Optionally executes commands locally and includes
+ real outputs in the prompt. Use with caution: do not send secrets to remote endpoints.
