@@ -1,0 +1,8 @@
+include debian/*
+include docker/*
+include sandbox/*
+include src/*
+include tests/*
+include build_deb.sh
+include LICENSE
+include README.md
