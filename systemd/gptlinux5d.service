@@ -1,0 +1,16 @@
+[Unit]
+Description=GPT Linux 5 Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Group=nogroup
+Environment=GPTLINUX5_API_URL=
+Environment=GPTLINUX5_API_KEY=
+Environment=GPTLINUX5_DAEMON_TOKEN=change-me
+ExecStart=/usr/bin/gptlinux5d --host 127.0.0.1 --port 8080
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
